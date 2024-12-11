@@ -27,9 +27,8 @@ except Exception as e:
     print(e)
     result = 1
 finally:
-    pass
-    #if os.path.exists("test.py"):
-    #    os.remove("test.py")
+    if os.path.exists("test.py"):
+        os.remove("test.py")
 
 if result == 1:
     exit(1)
